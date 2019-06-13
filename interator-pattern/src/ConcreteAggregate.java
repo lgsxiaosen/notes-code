@@ -6,7 +6,7 @@ import java.util.List;
  * @date 2019/6/13 11:51
  * @description
  */
-public class ContretorAggregate<T> implements Aggregate<T> {
+public class ConcreteAggregate<T> implements Aggregate<T> {
     private List<T> list = new ArrayList<T>();
     @Override
     public void add(T object) {
@@ -20,6 +20,6 @@ public class ContretorAggregate<T> implements Aggregate<T> {
 
     @Override
     public Iterator iterator() {
-        return new ContreteIterator<T>(this.list);
+        return new ConcreteIterator<T>(this.list);
     }
 }

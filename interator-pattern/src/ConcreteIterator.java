@@ -6,14 +6,14 @@ import java.util.List;
  * @date 2019/6/13 11:42
  * @description
  */
-public class ContreteIterator<T> implements Iterator<T> {
+public class ConcreteIterator<T> implements Iterator<T> {
     private List<T> list;
     /**
      * 定义当前游标
      */
     public int cursor = 0;
 
-    public ContreteIterator(List<T> list){
+    public ConcreteIterator(List<T> list){
         this.list = list;
     }
 
